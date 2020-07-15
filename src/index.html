@@ -1,13 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
   </head>
+  
   <body>
-    <header></header>
-    <main></main>
+    <header class="contenedor-logo">
+      <nav>     
+        <div class="logo">
+          <img src="img/logo.png">
+          <img class="menu" src="img/menu.png">
+        </div>
+      </nav>  
+    </header>
+    <main>
+<!-- Sección de formularios-->
+      <section class="contenedor-datos">
+        <div class="datos-generales">
+          <form>
+            <div class="content-form">
+              <h4 class="titulos-form">Tus datos personales</h4> 
+            </div>
+            <div>
+              <input class="nombre-input" type="text" name="nombre" id="nombre" placeholder="Nombres y apellidos">
+              <input class="email-input" type="text" name="email" id="email" placeholder="Email">
+              <input class="cel-input" type="number" name="celular" id="celular" placeholder="Teléfono">
+            </div>
+            <div class="content-form">
+              <h4 class="titulos-form">Forma de pago</h4>
+            </div>
+            <div>
+              <input class="tarjeta-input" type="number" name="tarjeta" id="tarjeta" placeholder="Nº de tarjeta de crédito o débito">
+              <input class="titular-input" type="text" name="titular" id="titular" placeholder="Titular de la tarjeta">
+              <input class="fecha-input" type="text" name="fecha" id="fecha" placeholder="dd/mm">
+              <!--<select>
+                <option value="01">January</option>
+                <option value="02">February </option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <select>
+                <option value="16"> 2016</option>
+                <option value="17"> 2017</option>
+                <option value="18"> 2018</option>
+                <option value="19"> 2019</option>
+                <option value="20"> 2020</option>
+                <option value="21"> 2021</option>
+            </select>-->
+              <input class="cvv-input" type="number" name="cvv" id="cvv" placeholder="cvv">
+            </div>
+            <div class="boton">
+              <button class="boton-pagar" type="button" onclick="saludo()">Pagar</button>
+            </div>
+          </form>
+        </div>
+        <div class="datos-resumen">
+          <div class="content-form">
+            <h4 class="titulos-form">Resumen de pago</h4>
+          </div>
+          <div>
+            <div class="texto-resumen">
+              <h4 style="float: right;">S/. 60.00</h4>
+              <h4>Pago Anual</h4>
+              <p>- Acceso a aplicación móvil</p>
+              <p>- Acceso a aplicación web</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+<!-- Fin de sección de formularios-->
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
