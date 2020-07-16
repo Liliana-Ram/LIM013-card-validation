@@ -26,8 +26,8 @@
             </div>
             <div>
               <input class="nombre-input" type="text" name="nombre" id="nombre" placeholder="Nombres y apellidos">
-              <input class="email-input" type="text" name="email" id="email" placeholder="Email">
-              <input class="cel-input" type="number" name="celular" id="celular" placeholder="Teléfono">
+              <input class="email-input" type="email" name="email" id="email" placeholder="Email">
+              <input class="cel-input" type="tel" name="celular" id="celular" placeholder="Teléfono">
             </div>
             <div class="content-form">
               <h4 class="titulos-form">Forma de pago</h4>
@@ -35,7 +35,7 @@
             <div>
               <input class="tarjeta-input" type="number" name="tarjeta" id="tarjeta" placeholder="Nº de tarjeta de crédito o débito">
               <input class="titular-input" type="text" name="titular" id="titular" placeholder="Titular de la tarjeta">
-              <input class="fecha-input" type="text" name="fecha" id="fecha" placeholder="dd/mm">
+              <input class="fecha-input" type="month" name="fecha" id="fecha" placeholder="dd/mm">
               <!--<select>
                 <option value="01">January</option>
                 <option value="02">February </option>
@@ -61,7 +61,7 @@
               <input class="cvv-input" type="number" name="cvv" id="cvv" placeholder="cvv">
             </div>
             <div class="boton">
-              <button class="boton-pagar" type="button" onclick="saludo()">Pagar</button>
+              <button class="boton-pagar" type="button" onclick="validarT()">Pagar</button>
             </div>
           </form>
         </div>
@@ -71,10 +71,14 @@
           </div>
           <div>
             <div class="texto-resumen">
-              <h4 style="float: right;">S/. 60.00</h4>
-              <h4>Pago Anual</h4>
-              <p>- Acceso a aplicación móvil</p>
-              <p>- Acceso a aplicación web</p>
+              <div>
+                <h4 class="titulo-resumen" style="float: left; margin: 0;">Pago Anual</h4>
+                <h4 class="precio-resumen">S/. 60.00</h4>
+              </div>
+              <div>
+                <p>- Acceso a aplicación móvil</p>
+                <p>- Acceso a aplicación web</p>
+            </div>
             </div>
 
           </div>
@@ -82,7 +86,28 @@
       </section>
 <!-- Fin de sección de formularios-->
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <div>
+          <img src="img/logo-footer.png">
+        </div>
+        <div>
+          <p>Contacto@fitfree.pe</p>
+          <p>(+511) 9998 88777 - (+511) 555 4443</p>
+        </div>
+        <div id="redes">
+          <ul>
+            <li><img src="img/facebook.png"></li>
+            <li><img src="img/instagram.png"></li>
+            <li><img src="img/youtube.png"></li>
+          </ul>
+        </div>
+        <div>
+          <hr>
+          <p class="derechos">2020 © Todos los derechos reservados a fitfree</p>
+        </div>
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

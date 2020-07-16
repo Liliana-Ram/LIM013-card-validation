@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 /* Inicio de estilos de header */
 .contenedor-logo{
     padding: 0 80px;
@@ -13,24 +17,64 @@
 }
 /* Fin de estilos de header */
 
+/* Inicio de estilos de footer */
+.footer{
+    padding: 60px 80px;
+    text-align: center;
+    background-color:white;
+    color: #4F4F4F;
+}
+
+#redes {
+    width: 100%;
+    margin: 30px 0 50px 0;
+
+}
+
+#redes ul{
+    list-style-type: none;
+    text-decoration-style: none;
+}
+
+#redes li{
+    display: inline;
+    text-align: center;
+    margin: 0px 20px 0 0;
+ }
+
+ .derechos{
+     font-size: 14px;
+     margin-top: 25px;
+ }
+/* Fin de estilos de footer */
+
 /* Inicio de estilos de validación de tarjeta */
 .contenedor-datos{
-    padding: 80px;
+    padding: 60px 80px;
     background-color: #F0F0F0;
-    height: 500px;
+    height: 600px;
 }   
+
+.datos-resumen{
+    width: 30%;
+    background-color: white;
+    float: right;  
+}
+
+.titulo-resumen{
+    margin: 0 0 20px 0;
+}
+
+.precio-resumen{
+    text-align: right;
+    margin: 0 0 20px 0;
+}
 
 .datos-generales{
     width: 60%;
     margin-right: 10%;
     background-color: white;
     float: left;
-}
-
-.datos-resumen{
-    width: 30%;
-    background-color: white;
-    float: right;  
 }
 
 .content-form{
