@@ -49,6 +49,14 @@ body{
 /* Fin de estilos de footer */
 
 /* Inicio de estilos de validación de tarjeta */
+#cont-tarj{
+  display: none;
+}
+
+#resumen-d{
+    display: none;
+}
+
 .contenedor-datos{
     padding: 60px 80px;
     background-color: #F0F0F0;
@@ -110,12 +118,12 @@ select{
 
 .email-input{
     width: 350px;
-    margin: 10px 0px 50px 50px;
+    margin: 10px 0px 40px 50px;
  }
 
 .cel-input{
     width: 230px;
-    margin: 10px 0px 50px 40px;
+    margin: 10px 0px 40px 40px;
  }
 
 .tarjeta-input{
@@ -125,18 +133,18 @@ select{
 
 .titular-input{
     width: 350px;
-    margin: 10px 40px 50px 50px;
+    margin: 10px 40px 40px 50px;
  }
 
  .fecha-input{
     width: 100px;
-    margin: 10px 40px 50px 0px;
+    margin: 10px 40px 40px 0px;
     text-align: center;
  }
 
  .cvv-input{
     width: 80px;
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 40px 0px;
     text-align: center;
  }
 
@@ -145,6 +153,12 @@ select{
      color: #4F4F4F;
  }
 
+ .texto-datos{
+    line-height: 25px;
+     margin: 50px 50px 40px 50px;
+     color: #4F4F4F;
+ }
+ 
  .boton{
     margin: 0px 40px 50px 50px;
     width:100%;
@@ -161,6 +175,19 @@ select{
     border-radius: 4px;
     border-color:none;
     border-width: 0px;
+    text-align: center;
+  }
+
+  .boton-modificar{
+    width: 130px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size:15px;
+    color: #25B297;
+    background-color: white;
+    border-radius: 4px;
+    border: 2px #25B297 solid;
     text-align: center;
   }
 /* Fin de estilos de validación de tarjeta */

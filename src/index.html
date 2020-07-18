@@ -20,7 +20,7 @@
 <!-- Sección de formularios-->
       <section class="contenedor-datos">
         <div class="datos-generales">
-          <form>
+          <form id="cont-datos">
             <div class="content-form">
               <h4 class="titulos-form">Tus datos personales</h4> 
             </div>
@@ -29,6 +29,24 @@
               <input class="email-input" type="email" name="email" id="email" placeholder="Email">
               <input class="cel-input" type="tel" name="celular" id="celular" placeholder="Teléfono">
             </div>
+            <div class="boton">
+              <button class="boton-pagar" type="button" id="siguiente">Siguiente</button>
+            </div>
+        </form>
+        <div id="resumen-d">
+          <div class="content-form">
+            <h4 class="titulos-form">Resumen de tus datos</h4> 
+          </div>
+          <div class="texto-datos">
+            <div id="r-nombre"></div>
+            <div id="r-email"></div>
+            <div id="r-telefono"></div>
+          </div>
+          <div class="boton">
+            <button class="boton-modificar" type="button" id="modificar">Modificar</button>
+          </div>
+        </div>
+        <form id="cont-tarj">
             <div class="content-form">
               <h4 class="titulos-form">Forma de pago</h4>
             </div>
@@ -36,33 +54,11 @@
               <input class="tarjeta-input" type="number" name="tarjeta" id="tarjeta" placeholder="Nº de tarjeta de crédito o débito">
               <input class="titular-input" type="text" name="titular" id="titular" placeholder="Titular de la tarjeta">
               <input class="fecha-input" type="month" name="fecha" id="fecha" placeholder="dd/mm">
-              <!--<select>
-                <option value="01">January</option>
-                <option value="02">February </option>
-                <option value="03">March</option>
-                <option value="04">April</option>
-                <option value="05">May</option>
-                <option value="06">June</option>
-                <option value="07">July</option>
-                <option value="08">August</option>
-                <option value="09">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
-            <select>
-                <option value="16"> 2016</option>
-                <option value="17"> 2017</option>
-                <option value="18"> 2018</option>
-                <option value="19"> 2019</option>
-                <option value="20"> 2020</option>
-                <option value="21"> 2021</option>
-            </select>-->
               <input class="cvv-input" type="number" name="cvv" id="cvv" placeholder="cvv">
             </div>
             <div id="mensaje"></div>
             <div class="boton">
-              <button class="boton-pagar" type="button" onclick="validarT()">Pagar</button>
+              <button class="boton-pagar" type="button" id="validar">Pagar</button>
             </div>
           </form>
         </div>
