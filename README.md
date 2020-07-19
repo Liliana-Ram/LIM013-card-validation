@@ -36,7 +36,7 @@ Lograr que el usuario realice su compra con éxito.
 
 ### 4.4 Imágenes de los Draft:
 
-![Draft 1](https://raw.githubusercontent.com/Liliana-Ram/LIM013-card-validation/master/img-readme/draft-1.jpg)
+![Draft 1](https://raw.githubusercontent.com/Liliana-Ram/LIM013-card-validation/master/img-readme/draft-1.jpg =100x20)
 
 ### 4.5 Resultados de los test:
 
