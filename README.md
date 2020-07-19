@@ -36,7 +36,7 @@ Lograr que el usuario realice su compra con éxito.
 
 ### 4.4 Imágenes de los Draft:
 
-![Draft 1](./img-readme/draft-1.jpg =100x20)
+![Draft 1](./img-readme/draft-1.jpg)
 
 ### 4.5 Resultados de los test:
 
