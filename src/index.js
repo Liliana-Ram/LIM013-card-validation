@@ -37,13 +37,6 @@ function returnD(){
 const validar=document.getElementById("validar");
 validar.onclick= verificar;
 
-
-function saludomensaje(){
-  const nombre= document.getElementById("nombre").value;
-  const saludo= document.getElementById("saludo")
-  saludo.innerHTML="<p> hola "+ nombre +"</p>";
-}
-
 function verificar() {
 
   let tarjeta= document.getElementById("tarjeta").value;
