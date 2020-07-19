@@ -11,82 +11,54 @@
     <header class="contenedor-logo">
       <nav>     
         <div class="logo">
-          <img src="img/logo.png">
+          <a href="index.html"><img src="img/logo.png"></a>
           <img class="menu" src="img/menu.png">
         </div>
       </nav>  
     </header>
     <main>
 <!-- Sección de formularios-->
-      <section class="contenedor-datos">
-        <div class="datos-generales">
-          <form id="cont-datos">
-            <div class="content-form">
-              <h4 class="titulos-form">Tus datos personales</h4> 
-            </div>
-            <div>
-              <input class="nombre-input" type="text" name="nombre" id="nombre" placeholder="Nombres y apellidos">
-              <input class="email-input" type="email" name="email" id="email" placeholder="Email">
-              <input class="cel-input" type="tel" name="celular" id="celular" placeholder="Teléfono">
-            </div>
-            <div class="boton">
-              <button class="boton-pagar" type="button" id="siguiente">Siguiente</button>
-            </div>
-        </form>
-        <div id="resumen-d">
-          <div class="content-form">
-            <h4 class="titulos-form">Resumen de tus datos</h4> 
-          </div>
-          <div class="texto-datos">
-            <div id="r-nombre"></div>
-            <div id="r-email"></div>
-            <div id="r-telefono"></div>
-          </div>
-          <div class="boton">
-            <button class="boton-modificar" type="button" id="modificar">Modificar</button>
-          </div>
+      <section class="banner">
+        <div>
+          <h1 class="titulo-banner">Haz tus ejercicios donde y cuando quieras</h1>
+          <h2 class="subt-banner">Te brindamos rutinas de acuerdo a tus necesidades y objetivos</h2>
+          <a href="#beneficios"><img src="img/chevron-down.png"></a> 
         </div>
-        <form id="cont-tarj">
-            <div class="content-form">
-              <h4 class="titulos-form">Forma de pago</h4>
+
+      </section>
+      <section id="beneficios">
+        <div class="box-beneficios">
+          <h1>Beneficios</h1>
+          <div class="box-cards">
+            <div class="card1">
+              <h2>Rutinas personalizadas</h2>
+              <img class="img-card" src="img/mancuerna.png">
+              <p class="text-box">Te armamos tus rutinas, de acuerdo a tus necesidades, objetivos y disponibilidad.</p>
             </div>
-            <div>
-              <input class="tarjeta-input" type="number" name="tarjeta" id="tarjeta" placeholder="Nº de tarjeta de crédito o débito">
-              <input class="titular-input" type="text" name="titular" id="titular" placeholder="Titular de la tarjeta">
-              <input class="fecha-input" type="month" name="fecha" id="fecha" placeholder="dd/mm">
-              <input class="cvv-input" type="number" name="cvv" id="cvv" placeholder="cvv">
+            <div class="card2">
+              <h2>Guia nutricional</h2>
+              <img class="img-card" src="img/apple.png">
+              <p class="text-box">Te ayudamos con tu calendario alimenticio, según tus objetivos de desarrollo físico.</p>
             </div>
-            <div id="mensaje"></div>
-            <div class="boton">
-              <button class="boton-pagar" type="button" id="validar">Pagar</button>
+            <div class="card3">
+              <h2>Agenda profesional</h2>
+              <img class="img-card" src="img/phone-book.png">
+              <p class="text-box">Podrás acceder a los servicios personalizados de diversos profesionales del mundo.</p>
             </div>
-          </form>
-        </div>
-        <div class="datos-resumen">
-          <div class="content-form">
-            <h4 class="titulos-form">Resumen de pago</h4>
           </div>
           <div>
-            <div class="texto-resumen">
-              <div>
-                <h4 class="titulo-resumen" style="float: left; margin: 0;">Pago Anual</h4>
-                <h4 class="precio-resumen">S/. 60.00</h4>
-              </div>
-              <div>
-                <p>- Acceso a aplicación móvil</p>
-                <p>- Acceso a aplicación web</p>
-            </div>
-            </div>
-
+            <button class="boton-pagar" type="button" onclick="location.href='pasarela-pago.html'">Comprar</button>
           </div>
+
         </div>
+        
       </section>
 <!-- Fin de sección de formularios-->
     </main>
     <footer>
       <div class="footer">
         <div>
-          <img src="img/logo-footer.png">
+          <a href="index.html"><img src="img/logo-footer.png"></a>
         </div>
         <div>
           <p>Contacto@fitfree.pe</p>
@@ -105,6 +77,5 @@
         </div>
       </div>
     </footer>
-    <script src="index.js" type="module"></script>
   </body>
 </html>

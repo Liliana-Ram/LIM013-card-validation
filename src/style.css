@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
 }
@@ -47,6 +50,87 @@ body{
      margin-top: 25px;
  }
 /* Fin de estilos de footer */
+
+/* Inicio de estilos de Index */
+
+.banner{
+    background-image: url("img/fondo-banner.png");
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding: 200px 0 100px 0;
+}
+
+.titulo-banner{
+    font-size: 55px;
+    color: #FDC954;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    margin: 170 80px 0 80px;
+}
+
+.subt-banner{
+    font-size: 30px;
+    color: white;
+    margin: 0 80px 180px 80px;
+}
+
+#beneficios{
+    padding: 80px 0;
+    background-color: #F0F0F0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.box-beneficios{
+    margin: 0 80px;
+}
+
+.box-cards{
+    width: 100%;
+}
+
+.card1{
+    width: 30%;
+    text-align: center;
+    padding: 60px 0;
+    background-color: white;
+    color: #4F4F4F;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 60 px;
+}
+
+.card2{
+    width: 30%;
+    text-align: center;
+    padding: 60px 0;
+    background-color: white;
+    color: #4F4F4F;
+    float: left; 
+    margin-right: 5%;
+    margin-bottom: 60 px;
+}
+.card3{
+    width: 30%;
+    text-align: center;
+    padding: 60px 0;
+    background-color: white;
+    color: #4F4F4F;
+    float: left; 
+    margin-bottom: 60px;
+}
+ .text-box{
+    margin: 0 50px;
+    font-size: 18px;
+    line-height: 30px;
+ }
+
+ .img-card{
+     margin: 20px 40px 40px 40px;
+ }
+
+/* Fin de estilos de Index */
 
 /* Inicio de estilos de validación de tarjeta */
 #cont-tarj{
