@@ -8,8 +8,13 @@ function resumenDatos(){
   let nombre = document.getElementById("nombre");
   let username = nombre.value;
 
+  if (username== ''){
+    document.getElementById("alerta-nombre").innerHTML = "Campo obligatorio";
+  return false;} 
+
   let email = document.getElementById("email");
   let correo = email.value;
+
 
   let celular = document.getElementById("celular");
   let movil = celular.value;
@@ -41,65 +46,27 @@ function verificar() {
 
   let tarjeta= document.getElementById("tarjeta").value;
 
-  let result= isValid(tarjeta);
+  let result= validator.isValid(tarjeta);
   console.log(result);
 
-  let cover= maskify(tarjeta);
+  let cover= validator.maskify(tarjeta);
   console.log(cover);
 
   let message= document.getElementById("mensaje");
   message.innerHTML+="<p>"+cover+"</p>";
 
-    if(tarjeta==true){
+  let messageError= document.getElementById("error");
+
+    if(tarjeta=true){
       message.innerHTML+="<p>Tarjeta válida</p>";
+      document.getElementById('cont-tarj').style.display = 'none';
+      document.getElementById('val-tarj').style.display = 'block';
     }
 
     else{
-      message.innerHTML+="<p>Tarjeta invalida</p>";
+      messageError.innerHTML+="<p>Tarjeta invalida</p>";
     }
 
-  }
-
-  function isValid(creditCardNumber){
-    let suma= 0;
-    for(i=0; i<creditCardNumber.length; i++){
-      if(i%2!=0){
-       let digito= creditCardNumber[i];
-       if(digito>9){
-         let digito1= parseInt(digito/10);
-         let digito2= digito%10;
-         digito=digito1+digito2;
-       } 
-       creditCardNumber[i]=digito;
-      }
-
-      suma=suma+parseInt(creditCardNumber[i]);
-    }
-    if (suma%10==0){
-      return true;
-    }
-    else{
-      return false;
-    }
-  }
-
-  function maskify(creditCardNumber){
-    let longitudNumero= creditCardNumber.length;
-    let result="";
-    if(longitudNumero>4){
-      for(i=0; i<creditCardNumber.length; i++){
-        if(i>=creditCardNumber.length-4){
-          result+=creditCardNumber[i];
-        }
-        else{
-          result+="*";
-        }
-      }
-    }
-    else{
-      result=creditCardNumber
-    }
-    return result;
   }
 
   

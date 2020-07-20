@@ -25,9 +25,10 @@
               <h3 class="titulos-form">Tus datos personales</h3> 
             </div>
             <div>
-              <input class="nombre-input" type="text" name="nombre" id="nombre" placeholder="Nombres y apellidos">
-              <input class="email-input" type="email" name="email" id="email" placeholder="Email">
-              <input class="cel-input" type="tel" name="celular" id="celular" placeholder="Teléfono">
+              <input class="nombre-input" type="text" name="nombre" id="nombre" placeholder="Nombres y apellidos" required>
+              <div id="alerta-nombre"></div>
+              <input class="email-input" type="email" name="email" id="email" placeholder="Email" required>
+              <input class="cel-input" type="tel" name="celular" id="celular" placeholder="Teléfono" required>
             </div>
             <div class="boton">
               <button class="boton-pagar" type="button" id="siguiente">Siguiente</button>
@@ -51,16 +52,27 @@
               <h3 class="titulos-form">Forma de pago</h3>
             </div>
             <div>
-              <input class="tarjeta-input" type="number" name="tarjeta" id="tarjeta" placeholder="Nº de tarjeta de crédito o débito">
-              <input class="titular-input" type="text" name="titular" id="titular" placeholder="Titular de la tarjeta">
-              <input class="fecha-input" type="month" name="fecha" id="fecha" placeholder="dd/mm">
-              <input class="cvv-input" type="number" name="cvv" id="cvv" placeholder="cvv">
+              <input class="tarjeta-input" type="number" name="tarjeta" id="tarjeta" placeholder="Nº de tarjeta de crédito o débito" required>
+              <input class="titular-input" type="text" name="titular" id="titular" placeholder="Titular de la tarjeta" required>
+              <input class="fecha-input" type="month" name="fecha" id="fecha" placeholder="dd/mm" required>
+              <input class="cvv-input" type="number" name="cvv" id="cvv" placeholder="cvv" required>
             </div>
-            <div id="mensaje"></div>
+            <div id="error"></div>
             <div class="boton">
               <button class="boton-pagar" type="button" id="validar">Pagar</button>
             </div>
           </form>
+          <div id="val-tarj">
+            <div class="content-form">
+              <h3 class="titulos-form">Forma de pago</h3> 
+            </div>
+            <div class="texto-datos">
+              <div id="mensaje"></div>
+            </div>
+            <div class="boton">
+              <button class="boton-pagar" type="button" id="pagar">Pagar</button>
+            </div>
+          </div>
         </div>
         <div class="datos-resumen">
           <div class="content-form">

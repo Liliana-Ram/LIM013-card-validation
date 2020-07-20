@@ -141,6 +141,10 @@ body{
     display: none;
 }
 
+#val-tarj{
+    display: none;
+}
+
 .contenedor-datos{
     padding: 60px 80px;
     background-color: #F0F0F0;
