@@ -144,6 +144,11 @@ body{
 #val-tarj{
     display: none;
 }
+.obligatorio{
+    margin: -10px 50px 10px 50px;
+    font-size: 14px;
+    color: red;
+}
 
 .contenedor-datos{
     padding: 60px 80px;
@@ -247,6 +252,10 @@ select{
      color: #4F4F4F;
  }
  
+ .men-inva{
+    margin: -10px 50px 40px 50px;
+    color: #4F4F4F;
+ }
  .boton{
     margin: 0px 40px 50px 50px;
     width:100%;

@@ -9,12 +9,11 @@ function resumenDatos(){
   let username = nombre.value;
 
   if (username== ''){
-    document.getElementById("alerta-nombre").innerHTML = "Campo obligatorio";
+    document.getElementById("alerta-nombre").innerHTML = "* Campo obligatorio";
   return false;} 
 
   let email = document.getElementById("email");
   let correo = email.value;
-
 
   let celular = document.getElementById("celular");
   let movil = celular.value;
@@ -52,12 +51,16 @@ function verificar() {
   let cover= validator.maskify(tarjeta);
   console.log(cover);
 
+  if (tarjeta== ''){
+    document.getElementById("alerta-tarjeta").innerHTML = "*Campo obligatorio";
+  return false;} 
+
   let message= document.getElementById("mensaje");
   message.innerHTML+="<p>"+cover+"</p>";
 
   let messageError= document.getElementById("error");
 
-    if(tarjeta=true){
+    if(result == true){
       message.innerHTML+="<p>Tarjeta válida</p>";
       document.getElementById('cont-tarj').style.display = 'none';
       document.getElementById('val-tarj').style.display = 'block';

@@ -26,7 +26,7 @@
             </div>
             <div>
               <input class="nombre-input" type="text" name="nombre" id="nombre" placeholder="Nombres y apellidos" required>
-              <div id="alerta-nombre"></div>
+              <div class="obligatorio" id="alerta-nombre"></div>
               <input class="email-input" type="email" name="email" id="email" placeholder="Email" required>
               <input class="cel-input" type="tel" name="celular" id="celular" placeholder="Teléfono" required>
             </div>
@@ -53,11 +53,12 @@
             </div>
             <div>
               <input class="tarjeta-input" type="number" name="tarjeta" id="tarjeta" placeholder="Nº de tarjeta de crédito o débito" required>
+              <div class="obligatorio" id="alerta-tarjeta"></div>
+              <div class="men-inva" id="error"></div>
               <input class="titular-input" type="text" name="titular" id="titular" placeholder="Titular de la tarjeta" required>
               <input class="fecha-input" type="month" name="fecha" id="fecha" placeholder="dd/mm" required>
               <input class="cvv-input" type="number" name="cvv" id="cvv" placeholder="cvv" required>
             </div>
-            <div id="error"></div>
             <div class="boton">
               <button class="boton-pagar" type="button" id="validar">Pagar</button>
             </div>
