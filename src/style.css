@@ -1,19 +1,37 @@
-html {
+/* Inicio de estilos de generales */
+
+html{
     scroll-behavior: smooth;
 }
+
 body{
     margin: 0;
+}
+
+.boton{
+    width: 130px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size:15px;
+    color: #ffffff;
+    background-color: #25B297;
+    border-radius: 4px;
+    border-color:none;
+    border-width: 0px;
+    text-align: center;
 }
 
 /* Inicio de estilos de header */
 .contenedor-logo{
     padding: 0 80px;
 }
+
 .logo{ 
     padding: 10px 0;
     width:100%;
     background-color: white;
-    }
+}
 
 .menu{ 
     float: right;
@@ -28,10 +46,9 @@ body{
     color: #4F4F4F;
 }
 
-#redes {
+#redes{
     width: 100%;
     margin: 30px 0 50px 0;
-
 }
 
 #redes ul{
@@ -43,16 +60,15 @@ body{
     display: inline;
     text-align: center;
     margin: 0px 20px 0 0;
- }
+}
 
- .derechos{
-     font-size: 14px;
-     margin-top: 25px;
- }
+.derechos{
+    font-size: 14px;
+    margin-top: 25px;
+}
 /* Fin de estilos de footer */
 
 /* Inicio de estilos de Index */
-
 .banner{
     background-image: url("img/fondo-banner.png");
     background-size: cover;
@@ -79,7 +95,6 @@ body{
     background-color: #F0F0F0;
     width: 100%;
     text-align: center;
-
 }
 
 .box-beneficios{
@@ -111,6 +126,7 @@ body{
     margin-right: 5%;
     margin-bottom: 60 px;
 }
+
 .card3{
     width: 30%;
     text-align: center;
@@ -120,16 +136,16 @@ body{
     float: left; 
     margin-bottom: 60px;
 }
- .text-box{
+
+.text-box{
     margin: 0 50px;
     font-size: 18px;
     line-height: 30px;
- }
+}
 
- .img-card{
+.icon-card{
      margin: 20px 40px 40px 40px;
- }
-
+}
 /* Fin de estilos de Index */
 
 /* Inicio de estilos de validación de tarjeta */
@@ -144,10 +160,17 @@ body{
 #val-tarj{
     display: none;
 }
+
 .obligatorio{
-    margin: -10px 50px 10px 50px;
+    margin: -30px 50px 40px 50px;
     font-size: 14px;
     color: red;
+}
+
+.not-campo{
+    margin-left: 50px;
+    color: #4F4F4F;
+    font-size: 16px;
 }
 
 .contenedor-datos{
@@ -171,6 +194,11 @@ body{
     margin: 0 0 20px 0;
 }
 
+.texto-resumen{
+    margin: 50px;
+    color: #4F4F4F;
+}
+
 .datos-generales{
     width: 60%;
     margin-right: 10%;
@@ -185,97 +213,84 @@ body{
 }
 
 .titulos-form{
-     margin: 0px 50px;
-     color: #4F4F4F;
-     font-size: 24px;
- }
+    margin: 0px 50px;
+    color: #4F4F4F;
+    font-size: 24px;
+}
 
 input{
     height: 30px;
 }
 
-::placeholder {
+::placeholder{
     color: #999999;
     font-size: 15px;
     padding: 10px;
 }
 
-select{
-    height: 30px;
-}
-
 .nombre-input{
-     width: 640px;
-     margin: 50px 50px 15px;
- }
+    width: 630px;
+    margin: 20px 50px 15px 50px;
+}
 
 .email-input{
     width: 350px;
     margin: 10px 0px 40px 50px;
- }
+}
 
 .cel-input{
     width: 230px;
     margin: 10px 0px 40px 40px;
- }
+}
 
 .tarjeta-input{
     width: 350px;
-    margin: 50px 40px 15px 50px;
- }
+    margin: 50px 40px 10px 50px;
+}
 
 .titular-input{
     width: 350px;
     margin: 10px 40px 40px 50px;
- }
+}
 
- .fecha-input{
+.fecha-input{
     width: 100px;
     margin: 10px 40px 40px 0px;
     text-align: center;
- }
+}
 
- .cvv-input{
+.cvv-input{
     width: 80px;
     margin: 10px 0px 40px 0px;
     text-align: center;
- }
+}
 
- .texto-resumen{
-     margin: 50px;
-     color: #4F4F4F;
- }
-
- .texto-datos{
+.texto-datos{
     line-height: 25px;
-     margin: 50px 50px 40px 50px;
-     color: #4F4F4F;
- }
- 
- .men-inva{
-    margin: -10px 50px 40px 50px;
+    margin: 50px 50px 40px 50px;
     color: #4F4F4F;
- }
- .boton{
+}
+ 
+.men-inva{
+    margin: 0px 50px 20px 50px;
+    color: #4F4F4F;
+}
+
+.borde-tarj{
+    width: 180px;
+    text-align: center;
+    border: solid;
+    border-width: 0.5px;
+    border-color: #4F4F4F;
+    padding: 5px;
+}
+
+.boton-box{
     margin: 0px 40px 50px 50px;
     width:100%;
-  }
+}
 
-  .boton-pagar{
-    width: 130px;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 300;
-    font-size:15px;
-    color: #ffffff;
-    background-color: #25B297;
-    border-radius: 4px;
-    border-color:none;
-    border-width: 0px;
-    text-align: center;
-  }
-
-  .boton-modificar{
+.boton-modificar{
     width: 130px;
     text-decoration: none;
     padding: 10px;
@@ -286,5 +301,5 @@ select{
     border-radius: 4px;
     border: 2px #25B297 solid;
     text-align: center;
-  }
+}
 /* Fin de estilos de validación de tarjeta */
