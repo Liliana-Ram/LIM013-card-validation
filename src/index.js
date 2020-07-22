@@ -79,5 +79,17 @@ function returnT() {
   document.getElementById('val-tarj').style.display = 'none';
   document.getElementById('cont-tarj').style.display = 'block';
 }
+
+const pagar = document.getElementById("pagar");
+pagar.onclick = pay;
+
+function pay() {
+  let nombreF = document.getElementById("nombre").value;
+
+  document.getElementById("nombre-f").innerHTML = (nombreF)
+  document.getElementById('pasarela').style.display = 'none';
+  document.getElementById('agradecimiento').style.display = 'block';
+}
+
 /* Fin de funcionalidades para box de validar tarjeta */
 

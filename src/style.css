@@ -161,6 +161,10 @@ body{
     display: none;
 }
 
+#agradecimiento{
+    display: none;
+}
+
 .obligatorio{
     margin: -30px 50px 40px 50px;
     font-size: 14px;

@@ -18,8 +18,8 @@
     </nav>
   </header>
   <main>
-    <section class="contenedor-datos">
-      <!-- Sección de pasarela de pago-->
+    <!-- Sección de pasarela de pago-->
+    <section class="contenedor-datos" id="pasarela">
       <div class="datos-generales">
         <!-- Box de para llenar datos-->
         <form id="cont-datos">
@@ -86,7 +86,6 @@
         </div>
         <!-- Box de para validar tarjeta-->
       </div>
-      <!-- Fin de ección de pasarela de pago-->
       <!-- Sección de resumen de precio-->
       <div class="datos-resumen">
         <div class="content-form">
@@ -107,6 +106,18 @@
       </div>
       <!-- fin de sección de resumen de precio-->
     </section>
+    <!-- Fin de ección de pasarela de pago-->
+    <!-- Sección de fin de flujo-->
+    <section class="contenedor-datos" id="agradecimiento">
+      <div>
+        <h1>Gracias por tu preferencia</h1>
+        <div id="nombre-f"></div>
+        <img src="img/estrellas.png">
+        <h4>Te estamos enviando la confirmación de pago a tu email registrado</h4>
+        <button class="boton" type="button" onclick="location.href='index.html'">Ir al inicio</button>
+      </div>
+    </section>
+    <!-- Fin de sección de fin de flujo-->
   </main>
   <footer>
     <div class="footer">
