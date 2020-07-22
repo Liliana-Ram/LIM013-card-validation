@@ -6,7 +6,7 @@ const validator = {
     let cifra = null;
     let cifra_cad = null;
     let suma = 0;
-    for (var i = 0; i < longitud; i += 2) {
+    for (let i = 0; i < longitud; i += 2) {
       cifra = parseInt(cadena.charAt(i)) * 2;
       if (cifra > 9) {
         cifra_cad = cifra.toString();
@@ -15,7 +15,7 @@ const validator = {
       }
       suma += cifra;
     }
-    for (var i = 1; i < longitud; i += 2) {
+    for (let i = 1; i < longitud; i += 2) {
       suma += parseInt(cadena.charAt(i));
     }
 

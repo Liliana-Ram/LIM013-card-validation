@@ -165,6 +165,18 @@ body{
     display: none;
 }
 
+#alerta-tarjeta{
+    display: none;
+}
+
+#error-cant-d{
+    display: none;
+}
+
+#error{
+    display: none;
+}
+
 .obligatorio{
     margin: -30px 50px 40px 50px;
     font-size: 14px;

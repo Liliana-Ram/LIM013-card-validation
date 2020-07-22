@@ -48,12 +48,18 @@ function verificar() {
   let cvv = document.getElementById("cvv").value;
 
   let result = validator.isValid(tarjeta);
-  console.log(result);
   let cover = validator.maskify(tarjeta);
-  console.log(cover);
 
   if (tarjeta === '' || titular === '' || fecha === '' || cvv === '') {
+    document.getElementById('alerta-tarjeta').style.display = 'block';
     document.getElementById("alerta-tarjeta").innerHTML = "* Todos los campos son obligatorios";
+    return false;
+  }
+
+  if (tarjeta.length > 16 || tarjeta.length < 16) {
+    document.getElementById('alerta-tarjeta').style.display = 'none';
+    document.getElementById('error-cant-d').style.display = 'block';
+    document.getElementById("error-cant-d").innerHTML = "Se requiere 16 dígitos";
     return false;
   }
 
@@ -62,13 +68,16 @@ function verificar() {
   let messageError = document.getElementById("error");
 
   if (result == true) {
-    numerosCover.innerHTML += cover;
-    message.innerHTML += "<p>Tarjeta válida</p>";
+    numerosCover.innerHTML = cover;
+    message.innerHTML = "<p>Tarjeta válida</p>";
     document.getElementById('cont-tarj').style.display = 'none';
     document.getElementById('val-tarj').style.display = 'block';
   }
   else {
-    messageError.innerHTML += "<p>Tarjeta invalida</p>";
+    messageError.innerHTML = "<p>Tarjeta invalida</p>";
+    document.getElementById('error-cant-d').style.display = 'none';
+    document.getElementById('alerta-tarjeta').style.display = 'none';
+    document.getElementById('error').style.display = 'block';
   }
 }
 
@@ -76,6 +85,10 @@ const modificarT = document.getElementById("modificar-t");
 modificarT.onclick = returnT;
 
 function returnT() {
+  document.getElementById("tarjeta").value = "";
+  document.getElementById('error-cant-d').style.display = 'none';
+  document.getElementById('error').style.display = 'none';
+  document.getElementById('error-cant-d').style.display = 'none';
   document.getElementById('val-tarj').style.display = 'none';
   document.getElementById('cont-tarj').style.display = 'block';
 }
