@@ -177,6 +177,12 @@ body{
     display: none;
 }
 
+.requerimiento{
+    margin: 0px 50px 10px 50px;
+    font-size: 14px;
+    color: red;
+}
+
 .obligatorio{
     margin: -30px 50px 40px 50px;
     font-size: 14px;
@@ -192,7 +198,7 @@ body{
 .contenedor-datos{
     padding: 60px 80px;
     background-color: #F0F0F0;
-    height: 600px;
+    height: 650px;
 } 
 
 .contenedor-final{
@@ -269,7 +275,7 @@ input{
 
 .tarjeta-input{
     width: 350px;
-    margin: 50px 40px 10px 50px;
+    margin: 50px 40px 15px 50px;
 }
 
 .titular-input{
@@ -296,7 +302,7 @@ input{
 }
  
 .men-inva{
-    margin: 0px 50px 20px 50px;
+    margin: -15px 50px 20px 50px;
     color: #4F4F4F;
 }
 
