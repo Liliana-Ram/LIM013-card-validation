@@ -1,108 +1,110 @@
-import validator from './validator.js';
+import validator from "./validator.js";
 
 /* Funcionalidades para box de llenar datos */
 const siguiente = document.getElementById("siguiente");
-siguiente.onclick = resumenDatos;
 
 function resumenDatos() {
 
-  let nombre = document.getElementById("nombre");
-  let username = nombre.value;
-  let email = document.getElementById("email");
-  let correo = email.value;
-  let celular = document.getElementById("celular");
-  let movil = celular.value;
+  const nombre = document.getElementById("nombre").value;
+  const email = document.getElementById("email").value;
+  const celular = document.getElementById("celular").value;
 
-  if (username === '' || correo === '' || movil === '') {
+  if (nombre === '' || email === '' || celular === '') {
     document.getElementById("alerta-datos").innerHTML = "* Todos los campos son obligatorios";
     return false;
   }
 
-  document.getElementById("r-nombre").innerHTML = (username)
-  document.getElementById("r-email").innerHTML = (correo)
-  document.getElementById("r-telefono").innerHTML = (movil)
-  document.getElementById('cont-datos').style.display = 'none';
-  document.getElementById('resumen-d').style.display = 'block';
-  document.getElementById('cont-tarj').style.display = 'block';
+  document.getElementById("cont-datos").style.display = "none";
+  document.getElementById("resumen-d").style.display = "block";
+  document.getElementById("cont-tarj").style.display = "block";
+  document.getElementById("r-nombre").innerHTML = (nombre)
+  document.getElementById("r-email").innerHTML = (email)
+  document.getElementById("r-telefono").innerHTML = (celular)
 }
 
+siguiente.addEventListener("click", resumenDatos);
+
 const modificar = document.getElementById("modificar");
-modificar.onclick = returnD;
 
 function returnD() {
 
-  document.getElementById('resumen-d').style.display = 'none';
-  document.getElementById('cont-datos').style.display = 'block';
+  document.getElementById("resumen-d").style.display = "none";
+  document.getElementById("cont-datos").style.display = "block";
 }
+
+modificar.addEventListener("click", returnD);
 /* Fin de funcionalidades para box de llenar datos */
 
 /* Funcionalidades para box de validar tarjeta */
 const validar = document.getElementById("validar");
-validar.onclick = verificar;
 
 function verificar() {
 
-  let tarjeta = document.getElementById("tarjeta").value;
-  let titular = document.getElementById("titular").value;
-  let fecha = document.getElementById("fecha").value;
-  let cvv = document.getElementById("cvv").value;
+  const tarjeta = document.getElementById("tarjeta").value;
+  const titular = document.getElementById("titular").value;
+  const fecha = document.getElementById("fecha").value;
+  const cvv = document.getElementById("cvv").value;
 
-  let result = validator.isValid(tarjeta);
-  let cover = validator.maskify(tarjeta);
 
   if (tarjeta === '' || titular === '' || fecha === '' || cvv === '') {
-    document.getElementById('alerta-tarjeta').style.display = 'block';
+    document.getElementById("alerta-tarjeta").style.display = "block";
     document.getElementById("alerta-tarjeta").innerHTML = "* Todos los campos son obligatorios";
     return false;
   }
 
   if (tarjeta.length > 16 || tarjeta.length < 16) {
-    document.getElementById('alerta-tarjeta').style.display = 'none';
-    document.getElementById('error-cant-d').style.display = 'block';
+    document.getElementById("alerta-tarjeta").style.display = "none";
+    document.getElementById("error-cant-d").style.display = "block";
     document.getElementById("error-cant-d").innerHTML = "Se requiere 16 dígitos";
     return false;
   }
 
-  let message = document.getElementById("mensaje");
-  let numerosCover = document.getElementById("cubierto");
-  let messageError = document.getElementById("error");
+  const result = validator.isValid(tarjeta);
+  const cover = validator.maskify(tarjeta);
+
+  const message = document.getElementById("mensaje");
+  const numerosCover = document.getElementById("cubierto");
+  const messageError = document.getElementById("error");
 
   if (result == true) {
+    document.getElementById("cont-tarj").style.display = "none";
+    document.getElementById("val-tarj").style.display = "block";
     numerosCover.innerHTML = cover;
     message.innerHTML = "<p>Tarjeta válida</p>";
-    document.getElementById('cont-tarj').style.display = 'none';
-    document.getElementById('val-tarj').style.display = 'block';
   }
   else {
+    document.getElementById("error-cant-d").style.display = "none";
+    document.getElementById("alerta-tarjeta").style.display = "none";
+    document.getElementById("error").style.display = "block";
     messageError.innerHTML = "<p>Tarjeta invalida</p>";
-    document.getElementById('error-cant-d').style.display = 'none';
-    document.getElementById('alerta-tarjeta').style.display = 'none';
-    document.getElementById('error').style.display = 'block';
   }
 }
 
+validar.addEventListener("click", verificar);
+
 const modificarT = document.getElementById("modificar-t");
-modificarT.onclick = returnT;
 
 function returnT() {
+  document.getElementById("val-tarj").style.display = "none";
+  document.getElementById("cont-tarj").style.display = "block";
+  document.getElementById("error-cant-d").style.display = "none";
+  document.getElementById("error").style.display = "none";
+  document.getElementById("error-cant-d").style.display = "none";
   document.getElementById("tarjeta").value = "";
-  document.getElementById('error-cant-d').style.display = 'none';
-  document.getElementById('error').style.display = 'none';
-  document.getElementById('error-cant-d').style.display = 'none';
-  document.getElementById('val-tarj').style.display = 'none';
-  document.getElementById('cont-tarj').style.display = 'block';
 }
+
+modificarT.addEventListener("click", returnT);
 
 const pagar = document.getElementById("pagar");
-pagar.onclick = pay;
 
 function pay() {
-  let nombreF = document.getElementById("nombre").value;
+  const nombreF = document.getElementById("nombre").value;
 
+  document.getElementById("pasarela").style.display = "none";
+  document.getElementById("agradecimiento").style.display = "block";
   document.getElementById("nombre-f").innerHTML = (nombreF)
-  document.getElementById('pasarela').style.display = 'none';
-  document.getElementById('agradecimiento').style.display = 'block';
 }
 
+pagar.addEventListener("click", pay);
 /* Fin de funcionalidades para box de validar tarjeta */
 

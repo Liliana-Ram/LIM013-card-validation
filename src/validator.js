@@ -1,8 +1,8 @@
 const validator = {
 
   isValid: function (creditCardNumber) {
-    let cadena = creditCardNumber.toString();
-    let longitud = cadena.length;
+    const cadena = creditCardNumber.toString();
+    const longitud = cadena.length;
     let cifra = null;
     let cifra_cad = null;
     let suma = 0;
@@ -27,10 +27,10 @@ const validator = {
   }
 
   , maskify: function (creditCardNumber) {
-    let longitudNumero = creditCardNumber.length;
+    const longitudNumero = creditCardNumber.length;
     let result = "";
     if (longitudNumero > 4) {
-      for (var i = 0; i < creditCardNumber.length; i++) {
+      for (let i = 0; i < creditCardNumber.length; i++) {
         if (i >= creditCardNumber.length - 4) {
           result += creditCardNumber[i];
         }
