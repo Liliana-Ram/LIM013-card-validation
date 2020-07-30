@@ -36,10 +36,12 @@ Lograr que el usuario realice su compra con éxito.
 
 ### 4.4 Imágenes de los Draft:
 
-<img src="img-readme/userflow.jpg">
+![](img-readme/userflow.jpg)
 
-<img src="img-readme/draft-1.jpg" width="450"> <img src="img-readme/draft-2.jpg" width="450">
-<img src="img-readme/draft-3.jpg" width="450"> <img src="img-readme/draft-4.jpg" width="450">
+![](img-readme/draft-1.jpg)
+![](img-readme/draft-2.jpg)
+![](img-readme/draft-3.jpg)
+![](img-readme/draft-4.jpg)
 
 ### 4.5 Resultados de los test:
 
@@ -50,7 +52,9 @@ Lograr que el usuario realice su compra con éxito.
 
 ### 4.6 Imágenes de los prototipos (Figma):
 
-<img src="img-readme/index.jpg" width="450"> <img src="img-readme/f-datos.jpg" width="450">
-<img src="img-readme/f-validar.jpg" width="450"> <img src="img-readme/f-finish.jpg" width="450">
+![](img-readme/index.jpg)
+![](img-readme/f-datos.jpg)
+![](img-readme/f-validar.jpg)
+![](img-readme/f-finish.jpg)
 
 
