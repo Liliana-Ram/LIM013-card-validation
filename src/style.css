@@ -177,6 +177,18 @@ body{
     display: none;
 }
 
+#visa{
+    display: none;
+}
+
+#mastercard{
+    display: none;
+}
+
+#diners{
+    display: none;
+}
+
 .requerimiento{
     margin: 0px 50px 10px 50px;
     font-size: 14px;
@@ -313,6 +325,10 @@ input{
     border-width: 0.5px;
     border-color: #4F4F4F;
     padding: 5px;
+}
+
+.icon-card{
+    margin: 10px 0;
 }
 
 .boton-box{

@@ -48,7 +48,7 @@ Lograr que el usuario realice su compra con éxito.
 * Se agregó un botón para regresar a la corrección de datos.
 * Se validó el texto para el botón de cerrar el flujo “Ir a la Home”.
 
-### 4.6 Imágenes de los prototipos:
+### 4.6 Imágenes de los prototipos (Figma):
 
 <img src="img-readme/index.jpg" width="450"> <img src="img-readme/f-datos.jpg" width="450">
 <img src="img-readme/f-validar.jpg" width="450"> <img src="img-readme/f-finish.jpg" width="450">

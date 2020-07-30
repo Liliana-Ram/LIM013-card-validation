@@ -52,10 +52,10 @@ function verificar() {
     return false;
   }
 
-  if (tarjeta.length > 16 || tarjeta.length < 16) {
+  if (tarjeta.length > 16 || tarjeta.length < 13) {
     document.getElementById("alerta-tarjeta").style.display = "none";
     document.getElementById("error-cant-d").style.display = "block";
-    document.getElementById("error-cant-d").innerHTML = "Se requiere 16 dígitos";
+    document.getElementById("error-cant-d").innerHTML = "Se requiere de 13 a 16 dígitos";
     return false;
   }
 
@@ -78,6 +78,23 @@ function verificar() {
     document.getElementById("error").style.display = "block";
     messageError.innerHTML = "<p>Tarjeta invalida</p>";
   }
+
+  if (tarjeta[0] == "4") {
+    document.getElementById("visa").style.display = "block";
+    document.getElementById("mastercard").style.display = "none";
+    document.getElementById("diners").style.display = "none";
+  } else
+    if (tarjeta[0] == "5" && (tarjeta[1] == "1" || tarjeta[1] == "2" || tarjeta[1] == "3" || tarjeta[1] == "4" || tarjeta[1] == "5")) {
+      document.getElementById("mastercard").style.display = "block";
+      document.getElementById("visa").style.display = "none";
+      document.getElementById("diners").style.display = "none";
+    } else
+      if (tarjeta[0] == "3" && (tarjeta[1] == "0" || tarjeta[1] == "6")) {
+        document.getElementById("diners").style.display = "block";
+        document.getElementById("mastercard").style.display = "none";
+        document.getElementById("visa").style.display = "none";
+      } 
+
 }
 
 validar.addEventListener("click", verificar);
